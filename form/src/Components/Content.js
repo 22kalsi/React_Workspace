@@ -4,117 +4,33 @@ import "./content.css";
 const Content = () => {
     return(
 <div>
-<div class="content">
-<h3>On Scroll Sticky Header</h3>
-<p>
-  The header will stick to the top when you reach its scroll position.
-</p>
-<p>Scroll back up to remove the sticky effect.</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>{" "}
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>{" "}
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>{" "}
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
-<p>
-  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-  definitiones no quo, maluisset concludaturque et eum, altera fabulas
-  ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-  Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-  Eum no molestiae voluptatibus.
-</p>
+  <div class="content">
+  <div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg height200">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg height60">Image</div><br></br>
+    <div class="fakeimg height60">Image</div><br></br>
+    <div class="fakeimg height60">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg height200">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br></br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg height200">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
 </div>
 </div>
     );
