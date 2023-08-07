@@ -3,12 +3,15 @@ import './App.css';
 import Footer from './Components/Footer';
 import Header from "./Components/Header";
 import Content from './Components/Content';
+
 function App() {
   return (
     <div >
-     <Header />
-     <Content />
-     <Footer />
+
+    <Header />
+    <Content />
+    <Footer />
+
     </div>
   );
 }

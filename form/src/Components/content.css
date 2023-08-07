@@ -9,18 +9,17 @@
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
   padding: 20px;
+  margin-top: 210px;
 }
 
-/* Main column */
 .main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
   padding: 20px;
+  margin-top: 250px;
 }
 
 /* Fake image, just for this example */
@@ -41,4 +40,33 @@
   .row {   
     flex-direction: column;
   }
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 700px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
