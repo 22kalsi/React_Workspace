@@ -2,14 +2,11 @@ import React from "react";
 import "./sideNav.css";
 
 let SideNav = () => {
-<div>
-<div class="sidenav">
-<div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, 'London')">London</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-</div>
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
 </div>
 }
 

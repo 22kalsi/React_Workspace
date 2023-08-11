@@ -1,12 +1,14 @@
 import React from "react";
-import "./footer.css"
+import "./footer.css";
 
 const Footer = () => {
-<div>
-<div class="foot">
-  <h2>Footer</h2>
+return (
+<div id="foot">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </div>
-</div>
+)
 }
 
 export default Footer;

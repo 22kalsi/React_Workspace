@@ -1,0 +1,68 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+.Cal {
+  font-family: 'Share Tech Mono';
+  height: 500px;
+  width: 375px;
+  perspective: 0 200px;
+  background: #e1e1e1;
+  position: relative;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.Display {
+  background: #B5C99A;
+  color: #862B0D;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 20%;
+  overflow: hidden;
+  font-size: 50px;
+  position: relative;
+  text-shadow: .5px .5px 0px #e1e1e1,
+  5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80%;
+}
+
+.Button {
+  background: #cad2c5;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 20%;
+  min-width: 25%;
+}
+
+.Button[data-size="2"] {
+  height: 40%;
+}
+
+.Button[data-value="null"] {
+  pointer-events: none;
+}
+
+.Button:hover {
+  background: #d7ddd3;
+  cursor: none;
+}
+
+.Button:active {
+  background: #bdc7b7;
+}

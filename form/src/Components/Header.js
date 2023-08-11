@@ -9,36 +9,27 @@ const Header = () => {
 window.onscroll = function() {scrollFunction()};
   return (
 <div>
-  {/* <div class="header">
-    <h1>My Website</h1>
-    <p>A <b>responsive</b> website created by me.</p>
-  </div> */}
-  
-  <div id="navbar">
-  {/* <a href="#default" id="logo">CompanyLogo</a> */}
-  <img id="logo" class="logo" src={logo} alt="SiteLogo" />
-  <div id="navbar-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </div>
-
 </div>
 
   );
 };
 
+var prevScrollpos = window.pageYOffset;
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.fontSize = "14px";
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.padding = "50px 10px" ;
-    document.getElementById("logo").style.fontSize = "18px";
+    document.getElementById("navbar").style.top = "-50px";
   }
+  prevScrollpos = currentScrollPos;
 }
 
 export default Header;

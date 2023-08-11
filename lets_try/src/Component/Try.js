@@ -2,21 +2,13 @@ import react, { useState } from "react";
 
 const Try = () => {
   const c = 0;
-  const cList = [
-                  {
-                    id: "1",
-                    name: "Gursewak Singh"
-                  },
-                  {
-                    id: "2",
-                    name: "Amandeep Kaur"
-                  }
-                ]
+  const cList = [ "Gursewak Singh", "Amandeep Kaur"]
+                
   const [count, setCount] = useState(0);
 
   const countIncrement = () => {
     
-    if ((cList[count] == "END OF LIST")) {
+    if ((cList[count] === "END OF LIST")) {
         setCount(0);
     } else {
         setCount(count + 1);
