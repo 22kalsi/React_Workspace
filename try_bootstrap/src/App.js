@@ -1,31 +1,15 @@
 import React from "react";
-import NavBar from "./Component/NavBar";
-import Footer from "./Component/Footer";
-import Modal from "./Component/Modal";
+import Navbar from "./Component/NavBar";
+// import '../node_modules/bootstrap/dist/css/bootstrap.css'
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+
 
 function App() {
   return (
     <div>
-      <Modal />
-      <div class="row">
-        <NavBar />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div>Left_Tab</div>
-          </div>
-          <div class="col-6">
-            <div>Body</div>
-          </div>
-          <div class="col">
-            <div>Right_Tab</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <Footer />
-      </div>
+
+        <Navbar />
+
     </div>
   );
 }

@@ -23,6 +23,7 @@ class Calculator extends Component {
       })
     }
   }
+  
   handleClick = e => {
     const value = e.target.getAttribute('data-value')
     switch (value) {

@@ -2,11 +2,11 @@
 
 .Cal {
   font-family: 'Share Tech Mono';
-  height: 500px;
-  width: 375px;
+  height: 400px;
+  width: 300px;
   perspective: 0 200px;
   background: #e1e1e1;
-  position: relative;
+  /* position: relative; */
   box-shadow:
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0 0 0 2px rgb(255, 255, 255),
