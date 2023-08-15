@@ -12,16 +12,14 @@ const RegisterForm = () =>{
   const { register, handleSubmit, reset} = useForm();
   const handleRegistration = (data) => {
     alert("Form have been submited");
-    if(data.key = null){
+   
       data.id = idArr
       //  setContacts(oldArray => [...contacts,JSON.stringify(data)])
       // setContacts(JSON.stringify(data))
       // console.log(id)
        localStorage.setItem(idArr, JSON.stringify( data));
       // reset()
-    } else {
-      
-    }
+
 
     setIdArr( localStorage.length )
     
