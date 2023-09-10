@@ -2,7 +2,7 @@ import React from "react";
 import "../Component/Cards.css";
 import img from "../Component/img_avatar.png"
 const Cards = () => {
-  
+
   return (<div >
     {Object.values(localStorage).map((item) => {
          const {name, id, email, password} = JSON.parse(item)
@@ -17,7 +17,8 @@ const Cards = () => {
                 </b>
                 <br/>
                 <p>
-                    E MAIL: {email}
+                {/* <button onClick = {Remove(id)}>Remove</button> */}
+                ID : {id}
                 </p>
               </h4>
               <div>
@@ -32,3 +33,9 @@ const Cards = () => {
 };
 
 export default Cards;
+
+const Remove = (id) => {
+
+  <a onClick={ localStorage.removeItem(id)}>Remove</a>
+
+}

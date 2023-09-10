@@ -1,25 +1,52 @@
 import React from "react";
-import "./content.css";
 import RegForm from "./Form";
-import SideNav from "./SideNav";
-
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from 'react-bootstrap/Nav';
+import Form1 from '../Components/From1'
 const Content = () => {
-    return(
-<div>
-  <div class="content">
-  <div class="row">
-  <div class="side">
-  <div class="sidenav">
-    <SideNav />
-    </div>
-  </div>
-  <div class="main">
-   <RegForm />
-  </div>
-</div>
-</div>
-</div>
-    );
+  const handleSelect = (eventKey) => 
+{
+
+if (eventKey == 1){
+
+<RegForm></RegForm>
+
+} 
+
+if (eventKey == 2){
+
+<Form1/>
+
+}
+
+}
+
+  return (
+    <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
+      <Nav.Item>
+        <Nav.Link eventKey="1" href="#/home">
+          Registration Form
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="2" title="Item">
+          NavLink 2 content
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="3" disabled>
+          NavLink 3 content
+        </Nav.Link>
+      </Nav.Item>
+      <NavDropdown title="Dropdown" id="nav-dropdown">
+        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+  );
 };
 
 

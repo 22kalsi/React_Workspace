@@ -1,30 +1,35 @@
 import React from "react";
+import './App.css'
+import { useState, useEffect } from "react";
+import Text from './text'
+ const App = () =>  {
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0,
-      text: "Hi"
-    };
-  }
+const [ greet, setGreet ] = useState(["HI"]);
 
-  componentDidMount() {
-    document.title = `You clicked ${this.state.count} times`;
-  }
-  componentDidUpdate() {
-    document.title = `You clicked ${this.state.count} times`;
-  }
+const func = ( x ) => {
+  // const text = "Hello Ji!"
+  setGreet([...greet, x])
 
-  render() {
+  localStorage.setItem(1, [...greet, JSON.stringify(x)])
+
+}
+
+const Remove = () => {
+
+setGreet(greet.id !== 1)
+
+}
+
+console.log(greet)
+
     return (
       <div>
-        <h1> {this.state.text} </h1>
-        <p>You clicked {this.state.count} times</p>
-        <button onClick={() => this.setState({text: this.state.text = "Hello"} )}>
-          Click me
-        </button>
+        <ol>{greet.map((g) => <li>{g}</li>)}</ol>
+        <button onClick={Remove}>remove</button>
+        <Text  change = {func} />
       </div>
     );
-  }
+  
 }
+
+export default App
