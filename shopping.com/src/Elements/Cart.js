@@ -4,6 +4,7 @@ import { Nav } from "react-bootstrap";
 import product1 from "../images/product-1.png";
 import product2 from "../images/product-2.png";
 import html2canvas from "html2canvas";
+import empty from "../images/undraw_empty_cart_co35.svg";
 // Bootstrap CSS
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { jsPDF } from "jspdf";
@@ -27,6 +28,10 @@ function Cart() {
     {
       coupon: "happy30",
       disc: 30,
+    },
+    {
+      coupon: "happy5",
+      disc: 5,
     },
   ];
   // const [coupon, setCoupon] = useState(list);
@@ -69,17 +74,22 @@ function Cart() {
     //       }
   };
 
-  if (isEmpty) return <p>Your cart is empty</p>;
+  if (isEmpty)
+    return (
+      <img
+        src={empty}
+        style={{ textAlign: "center", height: "75%", width: "75%" }}
+      />
+    );
 
   return (
     <>
       {/* <div className="untree_co-section before-footer-section"> */}
       <div className="container" id="pdf">
-      <nav className="navbar-brand">
-            shopping.com<span>.</span>
-          </nav>
-        <div className="row mb-5" >
-
+        <nav className="navbar-brand">
+          shopping.com<span>.</span>
+        </nav>
+        <div className="row mb-5">
           <form className="col-md-12">
             <div className="site-blocks-table">
               <table className="table">
@@ -132,9 +142,7 @@ function Cart() {
                             placeholder=""
                             aria-label="Example text with button addon"
                             aria-describedby="button-addon1"
-                          >
-                            {}
-                          </input>
+                          ></input>
                           <div className="input-group-append">
                             <button
                               className="btn btn-outline-black increase"
@@ -170,7 +178,6 @@ function Cart() {
         <div className="row">
           <div className="col-md-6">
             <div className="row mb-5">
-
               <div className="col-md-6">
                 <button className="btn btn-outline-black btn-sm btn-block">
                   Continue Shopping
@@ -230,9 +237,7 @@ function Cart() {
                     <span className="text-black">Cart Total</span>
                   </div>
                   <div className="col-md-6 text-right">
-                    <strong className="text-black">
-                      $ {cartTotal}
-                    </strong>
+                    <strong className="text-black">$ {cartTotal}</strong>
                   </div>
                 </div>
                 <div className="row mb-3">
@@ -258,9 +263,7 @@ function Cart() {
                     <span className="text-black">Total</span>
                   </div>
                   <div className="col-md-6 text-right">
-                    <strong className="text-black">
-                      $ {finalBill}
-                    </strong>
+                    <strong className="text-black">$ {finalBill}</strong>
                   </div>
                 </div>
 
@@ -276,10 +279,15 @@ function Cart() {
           </div>
         </div>
         <div className="col-md-6 mb-3 mb-md-0">
-                <button className="btn btn-black btn-sm btn-block" onClick={() => {createPDF()}}>
-                  Downlod PDF
-                </button>
-              </div>
+          <button
+            className="btn btn-black btn-sm btn-block"
+            onClick={() => {
+              createPDF();
+            }}
+          >
+            Downlod PDF
+          </button>
+        </div>
       </div>
       {/* </div> */}
     </>
@@ -288,10 +296,10 @@ function Cart() {
 
 export default Cart;
 
-const createPDF = async () => {   
-  const pdf = new jsPDF("portrait", "pt", "a4"); 
+const createPDF = async () => {
+  const pdf = new jsPDF("portrait", "pt", "a4");
   const data = await html2canvas(document.querySelector("#pdf"));
-  const img = data.toDataURL("image/png");  
+  const img = data.toDataURL("image/png");
   const imgProperties = pdf.getImageProperties(img);
   const pdfWidth = pdf.internal.pageSize.getWidth();
   const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;

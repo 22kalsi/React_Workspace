@@ -83,4 +83,4 @@ console.log(Object.keys(localStorage))
   );
 };
 
-export default RegisterForm;
+export default FormPop;

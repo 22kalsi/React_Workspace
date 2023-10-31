@@ -37,7 +37,9 @@ const Popup = () => {
         </span>
       )}
 
-      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+      <Modal show={show} size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Your Cart</Modal.Title>
         </Modal.Header>

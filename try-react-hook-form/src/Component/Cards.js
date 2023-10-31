@@ -1,10 +1,10 @@
 import React from "react";
-import "../Component/Cards.css";
+// import "../Component/Cards.css";
 import img from "../Component/img_avatar.png"
 const Cards = () => {
 
   return (<div >
-    {Object.values(localStorage).map((item) => {
+    {Object.values(localStorage) ? Object.values(localStorage) : {name: "N/A", id: "N/a", email: "N/A", password: "N/A"} .map((item) => {
          const {name, id, email, password} = JSON.parse(item)
         //  {<fetch lis = {text}/>}
         return (

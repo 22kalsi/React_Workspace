@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState, useEffect } from 'react'
 import { useForm } from "react-hook-form";
-import Cards from "../Component/Cards";
-import '../Component/Form.css'
+// import Cards from "../Component/Cards";
+// import '../Component/Form.css'
 
 const RegisterForm = () =>{
  
