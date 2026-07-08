@@ -3,25 +3,10 @@ import "./App.css";
 import { useState } from "react";
 import Addcontact from "./Addcontact";
 import ContactList from "./Contctlist";
+import Edit from "./edit";
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState("Add");
-  const contacts = [
-
-    {
-      id  : "1",
-      name : "Gursewak Singh",
-      contact : "8284988913",
-      gender : "male",
-    },
-        {
-      id  : "2",
-      name : "Amandeep Kaur",
-      contact : "97714141313",
-      gender : "female",
-    }
-
-  ]
   return (
     <div>
       <div className="tab">
@@ -50,21 +35,19 @@ const Header = () => {
       {activeTab === "Add" && (
         <div className="tabcontent">
           <Addcontact></Addcontact>
-          
         </div>
       )}
 
       {activeTab === "view" && (
         <div className="tabcontent">
-        {/* <ContactList/> */}
+          <ContactList />
         </div>
       )}
 
-      {activeTab === "edit" && (
-        <div className="tabcontent">
-          Edit contact
-        </div>
-      )}
+      {activeTab === "edit" && 
+      <div className="tabcontent">
+        <Edit/>
+        </div>}
     </div>
   );
 };

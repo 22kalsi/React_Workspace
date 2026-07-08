@@ -1,57 +1,52 @@
-import React, { useState, useEffect } from "react";
-import ContactList from "./Contctlist";
-import "./App.css";
-import { useForm } from 'react-hook-form';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { addContact } from "./contactSlice";
+
 const Addcontact = () => {
-const [contact, setContact] = useState([]);
-const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-  localStorage.setItem('contact', JSON.stringify(contact));
-}, [contact]);
+  const contacts = useSelector(
+    (state) => state.contact.contacts
+  );
 
-console.log(contact);
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    dispatch(addContact(data));
+    reset();
+  };
+
   return (
     <div className="container">
-      <form onSubmit={handleSubmit((data) => setContact([...contact, data]))} >
+      <form onSubmit={handleSubmit(onSubmit)}>
         <label>Full Name</label>
-        <input
-          type="text"
-          name="fullname"
-{...register('fullName')}
-          placeholder="Your Name"
-          //onChange={handleChange}
+
+        <input type="text"
+          {...register("fullName")}
+          placeholder="Full Name"
         />
 
         <label>Contact</label>
-        <input
-          type="text"
-          name="contact"
-{...register('contact')}
-          //onChange={handleChange}
-          placeholder="Your Contact Number"
+
+        <input type="text"
+          {...register("contact")}
+          placeholder="Contact Number"
         />
 
         <label>Gender</label>
-        <select
-          name="gender"
-   {...register('gender')}
-          //onChange={handleChange}
-        >
+
+        <select {...register("gender")}>
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
 
-        <input type="submit" />
+        <input type="submit" value="Save Contact" />
       </form>
 
-     
+      <hr />
 
-      <ContactList  list={contact} /> 
+      
     </div>
   );
 };
