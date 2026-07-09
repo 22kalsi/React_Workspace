@@ -2,7 +2,7 @@ import img from '../src/img/profile.jpg'
 import '../src/resume.css'
 import "../src/resume.min.css"
 import "devicon/devicon.min.css";
-
+import { Navbar, Nav, Container } from 'react-bootstrap';
 function App() {
      // Function will execute on click of button
      const onButtonClick = () => {
@@ -18,7 +18,7 @@ function App() {
     <div >
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">Portfolio</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src={img} alt=""></img>
         </span>

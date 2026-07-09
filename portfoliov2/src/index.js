@@ -7,7 +7,7 @@ import '../src/resume.css'
 import "../src/resume.min.css"
 import "devicon/devicon.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-// import '../src/vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css'
+import '../src/vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css'
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import * as bootstrap from "bootstrap";
