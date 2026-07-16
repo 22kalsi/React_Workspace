@@ -222,27 +222,6 @@ I am a quick learner, a team player, and committed to delivering high-quality so
         </div>
       </section>
 
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <a href="https://shoppingdotcomm.netlify.app/"><i class="fa-solid fa-diagram-project"></i>
-              shoppingdotccom</a>
-            </li>
-             <li>
-              <a href="https://github.com/22kalsi/Arduino_Workspace/tree/main/LDR_%20Controller/LDR_Controller_0.1"><i class="fa-solid fa-diagram-project"></i>
-               LDR Based Switch </a>
-            </li>
-            <li>
-              <a href="https://github.com/22kalsi/Arduino_Workspace/tree/main/Final_esp32_waterTank_Gaya-20230109T022603Z-001"><i class="fa-solid fa-diagram-project"></i>
-               Water Level Indicator </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
@@ -339,7 +318,28 @@ I am a quick learner, a team player, and committed to delivering high-quality so
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+  
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <a href="https://shoppingdotcomm.netlify.app/"><i class="fa-solid fa-diagram-project"></i>
+              shoppingdotccom</a>
+            </li>
+             <li>
+              <a href="https://github.com/22kalsi/Arduino_Workspace/tree/main/LDR_%20Controller/LDR_Controller_0.1"><i class="fa-solid fa-diagram-project"></i>
+               LDR Based Switch </a>
+            </li>
+            <li>
+              <a href="https://github.com/22kalsi/Arduino_Workspace/tree/main/Final_esp32_waterTank_Gaya-20230109T022603Z-001"><i class="fa-solid fa-diagram-project"></i>
+               Water Level Indicator </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Awards &amp; Certifications</h2>
           <ul class="fa-ul mb-0">
@@ -351,9 +351,6 @@ I am a quick learner, a team player, and committed to delivering high-quality so
           </ul>
         </div>
       </section>
-
-      
-
     </div>
 
  {/* <!-- Bootstrap core JavaScript --> */}
